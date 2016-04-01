@@ -1,0 +1,3 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/JoseJavier/Dropbox/10 ICAI/04 Cuarto/42 UMICH Winter Term/EECS 499 Advanced Directed Study/TwoFishSPA/results'

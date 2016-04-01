@@ -1,0 +1,2 @@
+#!/bin/bash
+~/.hooks/clean_latex.sh &
