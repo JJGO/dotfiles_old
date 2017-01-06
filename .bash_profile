@@ -30,7 +30,12 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # added by Anaconda2 2.4.1 installer
 export PATH="/Users/JoseJavier/anaconda/bin:$PATH"
 
-export PATH="/Applications/MATLAB_R2014a.app/bin:$PATH"
+export PATH="/Applications/MATLAB_R2014b.app/bin:$PATH"
+
+export PATH="/Applications/Julia-0.4.5.app/Contents/Resources/julia/bin:$PATH"
+
+export PATH="/Users/JoseJavier/torch/install/bin:$PATH"
+## USER MADE alias
 
 PS1="\[\e]0;\u@\h: \W\a\]\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[00;36m\]\W\[\033[00m\]\$ "
 #PS1="\[\e]0;\u@\h: \W\a\]\[\033[38;5;196m\]\u@\h\[\033[00m\]:\[\033[00;36m\]\W\[\033[00m\]\$ "
@@ -42,10 +47,15 @@ alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 test -f ~/.git-completion.bash && . $_
 
 # alias aspell='aspell -d en_US'
+alias py3='source activate py3'
 alias jc='source activate py3 && jupyter qtconsole --style monokai &'
 alias jcw='source activate py3 && jupyter qtconsole &'
 
-# alias matlab='/Applications/MATLAB_R2014a.app/bin/matlab -nodesktop'
+alias matlabc='matlab -nodesktop -nosplash'
+alias caen='ssh jjgo@login.engin.umich.edu'
+alias flux='ssh jjgo@flux-login.engin.umich.edu'
+
+alias subl='sublime'
 
 _complete_ssh_hosts ()
 {
@@ -75,4 +85,34 @@ complete -F _complete_ssh_hosts ssh
 #     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 # fi
 
+timestamp() {
+    date +"%Y-%m_%T"
+}
 
+alias tab='open . -a iterm'
+alias speedtest='curl -o /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
+
+export PATH="/usr/local/sbin:$PATH"
+
+export TERM="screen-256color"
+
+export EDITOR='vim'
+
+source ~/.bin/tmuxinator.bash
+
+if [ -f /sw/etc/bash_completion ]; then
+   . /sw/etc/bash_completion
+fi
+
+alias tac='tail -r'
+alias diff='colordiff'
+
+alias crontab="VIM_CRONTAB=true crontab"
+
+alias ren="~/.scripts/tvshow.py"
+
+alias yt="youtube-dl"
+
+alias veracrypt="/Applications/VeraCrypt.app/Contents/MacOS/VeraCrypt"
+
+export PATH="/Applications/amplide.macosx64:$PATH"
