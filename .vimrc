@@ -138,3 +138,6 @@ set nohlsearch
 "         set guifont=Inconsolata\ for\ Powerline:h15
 "     endif
 " endif
+
+set t_Co=256
+
