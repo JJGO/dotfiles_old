@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-GLOBIGNORE=".DS_Store"
+GLOBIGNORE=".DS_Store .git"
 FILES=$(find .* -maxdepth 0)
 current=$(pwd)
 cd ~
